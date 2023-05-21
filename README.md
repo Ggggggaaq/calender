@@ -1,10 +1,10 @@
 # calender
 
-Controller Link
+- Controller Link
 
 https://github.com/Ggggggaaq/calender/blob/develop/src/main/java/com/effourt/calenkit/controller/MemberController2.java
 
-View Link
+- View Link
 
 Admin(검색,회원 상태 변경,체크 회원 삭제 처리)
 https://github.com/Ggggggaaq/calender/blob/develop/src/main/resources/templates/member/admin.html
