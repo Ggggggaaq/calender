@@ -275,12 +275,10 @@ public class MemberController2 {
     // 아이디값 비교 후 멤버 상태 0 변경 
     @PostMapping(value = "/members/myPageDelete/delete")
     public String myPageDelete(String memId) {
-        Integer memStatus=0;
         String loginId=(String)session.getAttribute("loginId");
         Member member=memberRepository.findByMemId(loginId);
       if(member.getMemId().equals(memId)) {
-            member.setMemStatus(memStatus);
-            myPageService.removeMe(member);
+            adminService.removeMember(memId);
             session.removeAttribute("loginId");
             return "member/endPage";
         }

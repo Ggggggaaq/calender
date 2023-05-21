@@ -1,10 +1,6 @@
 
 
-    $(document).ready(function() {
-    $('#memImage').change(function() {
-        $('#files_send').click();
-    });
-});
+
 
     //유효성 검사
     $(document).on('change', '#memImage', function () {
